@@ -42,6 +42,37 @@ return [
             'synchronous' => null,
         ],
 
+		'combat_db' => [
+			'driver' => 'mysql',
+			'host' => env('DB_COMBAT_HOST', '127.0.0.1'),
+			'port' => env('DB_COMBAT_PORT', '3306'),
+			'database' => env('DB_COMBAT_DATABASE', 'combat_db'),
+			'username' => env('DB_COMBAT_USERNAME', 'root'),
+			'password' => env('DB_COMBAT_PASSWORD', '12345678'),
+			'unix_socket' => env('DB_COMBAT_SOCKET', ''),
+			'charset' => 'utf8mb4',
+			'collation' => 'utf8mb4_unicode_ci',
+			'prefix' => '',
+			'strict' => true,
+			'engine' => null,
+		],
+
+
+		'test_db' => [
+			'driver' => 'mysql',
+			'host' => env('DB_TEST_HOST', '127.0.0.1'),
+			'port' => env('DB_TEST_PORT', '3306'),
+			'database' => env('DB_TEST_DATABASE', 'test_db'),
+			'username' => env('DB_TEST_USERNAME', 'root'),
+			'password' => env('DB_TEST_PASSWORD', '12345678'),
+			'unix_socket' => env('DB_TEST_SOCKET', ''),
+			'charset' => 'utf8mb4',
+			'collation' => 'utf8mb4_unicode_ci',
+			'prefix' => '',
+			'strict' => true,
+			'engine' => null,
+		],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),
